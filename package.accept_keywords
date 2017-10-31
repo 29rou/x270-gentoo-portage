@@ -1,0 +1,466 @@
+# required by @selected
+# required by @world (argument)
+=sys-boot/systemrescuecd-x86-grub-0.1 ~amd64
+# required by @selected
+# required by @world (argument)
+=sys-libs/glibc-2.25-r8 ~amd64
+# required by @selected
+# required by @world (argument)
+=app-editors/visual-studio-code-1.17.2 ~amd64
+# required by @selected
+# required by @world (argument)
+=net-im/slack-bin-2.8.0 ~amd64
+# required by @selected
+# required by @world (argument)
+=app-emulation/docker-compose-1.16.1-r1 ~amd64
+# required by @selected
+# required by @world (argument)
+=sys-power/acpi_call-1.1.0-r2 ~amd64
+# required by @selected
+# required by @world (argument)
+=dev-ml/opam-1.3.1-r1 ~amd64
+# required by @selected
+# required by @world (argument)
+=sys-auth/fingerprint-gui-1.07 ~amd64
+# required by @selected
+# required by @world (argument)
+=dev-java/leiningen-bin-2.7.1-r1 ~amd64
+# required by @selected
+# required by @world (argument)
+=dev-lang/smlnj-110.75 ~amd64
+# required by @selected
+# required by @world (argument)
+=app-i18n/mozc-2.20.2677.102 ~amd64
+# required by @selected
+# required by @world (argument)
+=app-laptop/tpacpi-bat-3.0-r1 ~amd64
+# required by =app-misc/tracker-1.12.3 (argument)
+=app-misc/tracker-1.12.3 ~amd64
+# required by app-misc/tracker-1.12.3::gentoo[nautilus]
+# required by =app-misc/tracker-1.12.3 (argument)
+=gnome-extra/nautilus-tracker-tags-1.12.3 ~amd64
+# required by www-client/firefox-57.0_beta11::mozilla
+# required by @selected
+# required by @world (argument)
+=sys-devel/clang-5.0.0 ~amd64
+# required by net-im/slack-bin-2.8.0::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/nss-3.33 ~amd64
+# required by sys-devel/llvm-5.0.0::gentoo
+# required by sys-libs/compiler-rt-sanitizers-5.0.0::gentoo
+# required by sys-devel/clang-runtime-5.0.0::gentoo[sanitize,compiler-rt]
+# required by sys-devel/clang-5.0.0::gentoo
+# required by www-client/firefox-57.0_beta11::mozilla
+# required by @selected
+# required by @world (argument)
+=sys-devel/llvm-common-5.0.0 ~amd64
+# required by sys-devel/clang-5.0.0::gentoo
+# required by www-client/firefox-57.0_beta11::mozilla
+# required by @selected
+# required by @world (argument)
+=sys-devel/llvm-5.0.0 ~amd64
+# required by sys-devel/clang-5.0.0::gentoo
+# required by www-client/firefox-57.0_beta11::mozilla
+# required by @selected
+# required by @world (argument)
+=sys-devel/clang-runtime-5.0.0 ~amd64
+# required by gnome-extra/evolution-data-server-3.22.7::gentoo
+# required by gnome-base/gnome-shell-3.22.3-r2::gentoo
+# required by virtual/notification-daemon-0::gentoo[gnome]
+# required by gnome-extra/nm-applet-1.4.6-r1::gentoo
+# required by gnome-base/gnome-control-center-3.22.2-r1::gentoo[networkmanager]
+# required by gnome-base/gnome-core-apps-3.22.2::gentoo
+# required by gnome-base/gnome-3.22.2::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/nspr-4.17 ~amd64
+# required by =www-client/firefox-57.0_beta11 (argument)
+=www-client/firefox-57.0_beta11 ~amd64
+# required by dev-java/icedtea-bin-3.5.1::gentoo[-headless-awt,-multilib]
+# required by virtual/jdk-1.8.0-r3::gentoo
+# required by media-libs/libjpeg-turbo-1.5.1::gentoo[java]
+# required by www-client/firefox-57.0_beta11::mozilla[system-jpeg]
+# required by @selected
+# required by @world (argument)
+=media-libs/libpng-1.6.34 ~amd64
+# required by sys-devel/clang-runtime-5.0.0::gentoo[compiler-rt]
+# required by sys-devel/clang-5.0.0::gentoo
+# required by www-client/firefox-57.0_beta11::mozilla
+# required by @selected
+# required by @world (argument)
+=sys-libs/compiler-rt-5.0.0 ~amd64
+# required by sys-devel/clang-runtime-5.0.0::gentoo[sanitize,compiler-rt]
+# required by sys-devel/clang-5.0.0::gentoo
+# required by www-client/firefox-57.0_beta11::mozilla
+# required by @selected
+# required by @world (argument)
+=sys-libs/compiler-rt-sanitizers-5.0.0 ~amd64
+# required by sys-devel/clang-runtime-5.0.0::gentoo[openmp]
+# required by sys-devel/clang-5.0.0::gentoo
+# required by www-client/firefox-57.0_beta11::mozilla
+# required by @selected
+# required by @world (argument)
+=sys-libs/libomp-5.0.0 ~amd64
+# required by media-libs/mesa-17.2.3::gentoo[wayland]
+# required by dev-qt/qtgui-5.7.1-r1::gentoo[egl]
+# required by app-i18n/mozc-2.20.2677.102::wjn-overlay[qt5]
+# required by @selected
+# required by @world (argument)
+=dev-libs/wayland-protocols-1.11 ~amd64
+# required by x11-base/xorg-server-1.19.5::gentoo[glamor]
+# required by dev-libs/weston-1.11.0::gentoo[xwayland]
+# required by @selected
+# required by @world (argument)
+=media-libs/mesa-17.2.3 ~amd64
+# required by media-libs/clutter-1.26.2::gentoo
+# required by gnome-extra/gnome-contacts-3.22.1::gentoo
+# required by gnome-base/gnome-core-apps-3.22.2::gentoo
+# required by gnome-base/gnome-3.22.2::gentoo
+# required by @selected
+# required by @world (argument)
+=x11-libs/libdrm-2.4.85 ~amd64
+# required by app-i18n/mozc (argument)
+=app-i18n/mozc-2.20.2673.102 ~amd64
+# required by app-i18n/mozc-2.20.2673.102::gentoo
+# required by app-i18n/mozc (argument)
+=dev-libs/protobuf-3.4.1 ~amd64
+# required by app-i18n/mozc-2.20.2673.102::gentoo
+# required by app-i18n/mozc (argument)
+=dev-util/gyp-20170904022846 ~amd64
+# required by app-i18n/ibus-kkc-1.5.22::gentoo
+# required by ibus-kkc (argument)
+=app-i18n/libkkc-0.3.5 ~amd64
+# required by ibus-kkc (argument)
+=app-i18n/ibus-kkc-1.5.22 ~amd64
+# required by app-i18n/mozc-2.20.2673.102::gentoo[gui,handwriting-tegaki]
+# required by mozc (argument)
+=app-i18n/tegaki-zinnia-japanese-0.3 ~amd64
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=gnome-base/gnome-core-libs-3.24.0 ~amd64
+# required by =gnome-base/gnome-3.24.0 (argument)
+=gnome-base/gnome-3.24.0 ~amd64
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=app-text/evince-3.24.2 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-extra/gnome-characters-3.24.0 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=app-arch/file-roller-3.24.1 ~amd64
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=gnome-base/gnome-session-3.24.1 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo[tracker]
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=media-sound/gnome-music-3.24.2 ~amd64
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=gnome-base/nautilus-3.24.2.1 ~amd64
+# required by dev-libs/gjs-1.48.7::gentoo
+# required by gnome-base/gnome-shell-3.24.3::gentoo
+# required by gnome-extra/gnome-tweak-tool-3.24.1::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=dev-lang/spidermonkey-38.2.1_rc0 ~amd64
+# required by gnome-extra/gnome-documents-3.24.3::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo[tracker]
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-base/gnome-desktop-3.24.2 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=www-client/epiphany-3.24.5 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=media-sound/sound-juicer-3.24.0 ~amd64
+# required by media-gfx/gnome-photos-3.24.3::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo[tracker]
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=media-libs/gegl-0.3.20 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=sys-apps/baobab-3.24.0 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-extra/gnome-system-monitor-3.24.0 ~amd64
+# required by app-crypt/seahorse-3.20.0::gentoo
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/glib-2.52.3 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=sys-apps/gnome-disk-utility-3.24.1 ~amd64
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=gnome-base/gnome-shell-3.24.3 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-extra/gnome-calculator-3.24.0 ~amd64
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=gnome-extra/gnome-user-docs-3.24.2 ~amd64
+# required by virtual/libgudev-232::gentoo
+# required by x11-wm/mutter-3.24.4::gentoo
+# required by gnome-base/gnome-shell-3.24.3::gentoo
+# required by gnome-extra/gnome-tweak-tool-3.24.1::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=dev-libs/libgudev-232 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo[tracker]
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-extra/gnome-documents-3.24.3 ~amd64
+# required by gnome-extra/gnome-tweak-tool-3.24.1::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-base/gsettings-desktop-schemas-3.24.1 ~amd64
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=x11-themes/gnome-backgrounds-3.24.0 ~amd64
+# required by media-gfx/shotwell-0.26.3::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo[shotwell]
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=media-libs/gexiv2-0.10.6 ~amd64
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=x11-terms/gnome-terminal-3.24.2 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo[shotwell]
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=media-gfx/shotwell-0.26.3 ~amd64
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=gnome-base/gnome-settings-daemon-3.24.3 ~amd64
+# required by gnome-base/gnome-core-libs-3.24.0::gentoo
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=gnome-base/gvfs-1.32.1 ~amd64
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=gnome-base/gdm-3.24.3 ~amd64
+# required by dev-libs/gobject-introspection-1.52.1::gentoo
+# required by dev-libs/gjs-1.48.7::gentoo
+# required by gnome-base/gnome-shell-3.24.3::gentoo
+# required by gnome-extra/gnome-tweak-tool-3.24.1::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=dev-libs/gobject-introspection-common-1.52.1 ~amd64
+# required by x11-terms/gnome-terminal-3.24.2::gentoo
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=x11-libs/vte-0.48.3 ~amd64
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=media-gfx/eog-3.24.1 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-extra/gucharmap-10.0.0 ~amd64
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=x11-themes/adwaita-icon-theme-3.24.0 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-extra/gnome-tweak-tool-3.24.1 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-extra/gnome-weather-3.24.0 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-extra/gnome-power-manager-3.24.0 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=media-video/cheese-3.24.0 ~amd64
+# required by app-misc/tracker-1.12.3::gentoo
+# required by media-gfx/gnome-photos-3.24.3::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo[tracker]
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=x11-libs/pango-1.40.12 ~amd64
+# required by gnome-base/gnome-shell-3.24.3::gentoo
+# required by gnome-extra/gnome-tweak-tool-3.24.1::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=x11-wm/mutter-3.24.4 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=app-dicts/gnome-dictionary-3.24.0 ~amd64
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=app-editors/gedit-3.22.1 ~amd64
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=gnome-base/gnome-control-center-3.24.3 ~amd64
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=gnome-base/gnome-core-apps-3.24.0 ~amd64
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-base/gnome-extra-apps-3.24.0 ~amd64
+# required by net-im/slack-bin-2.8.0::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/atk-2.24.0 ~amd64
+# required by media-libs/harfbuzz-1.4.6-r2::gentoo[introspection]
+# required by x11-libs/pango-1.40.12::gentoo
+# required by gnome-extra/gnome-documents-3.24.3::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo[tracker]
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=dev-libs/gobject-introspection-1.52.1 ~amd64
+# required by media-libs/gegl-0.3.20::gentoo
+# required by media-gfx/gnome-photos-3.24.3::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo[tracker]
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=media-libs/babl-0.1.30 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-extra/gnome-calendar-3.24.3 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo[tracker]
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=media-gfx/gnome-photos-3.24.3 ~amd64
+# required by mail-client/evolution-3.24.5::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=gnome-extra/evolution-data-server-3.24.6 ~amd64
+# required by gnome-base/gnome-core-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo
+# required by @selected
+# required by @world (argument)
+=media-video/totem-3.24.0 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=media-gfx/gnome-font-viewer-3.24.0 ~amd64
+# required by gnome-base/gnome-shell-3.24.3::gentoo
+# required by gnome-extra/gnome-tweak-tool-3.24.1::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=dev-libs/gjs-1.48.7 ~amd64
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=mail-client/evolution-3.24.5 ~amd64
+# required by x11-wm/mutter-3.24.4::gentoo
+# required by gnome-base/gnome-shell-3.24.3::gentoo
+# required by gnome-extra/gnome-tweak-tool-3.24.1::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=virtual/libgudev-232 ~amd64
+# required by gnome-extra/gucharmap-10.0.0::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+=app-i18n/unicode-data-10.0.0 ~amd64
+# required by =dev-util/gdbus-codegen-2.52.3 (argument)
+=dev-util/gdbus-codegen-2.52.3 ~amd64
+# required by =www-client/firefox-57.0_beta12 (argument)
+=www-client/firefox-57.0_beta12 ~amd64
+# required by fcitx-kkc (argument)
+=app-i18n/fcitx-kkc-9999 **
+# required by app-i18n/fcitx-kkc-9999::wjn-overlay
+# required by fcitx-kkc (argument)
+=app-i18n/libkkc-data-0.2.7 **
+# required by gopreload (argument)
+=sys-apps/gopreload-2017.10.31 **
+# required by gopreload (argument)
+=sys-apps/gopreload-9999 **

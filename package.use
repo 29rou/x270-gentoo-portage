@@ -1,0 +1,47 @@
+app-emulation/docker btrfs
+gnome-base/gnome -classic ibs
+sys-apps/gnome-disk-utility fat
+net-misc/modemmanager mbim
+app-i18n/ibus gconf
+app-i18n/mozc clang 
+app-i18n/fcitx gtk2 gtk3
+app-office/libreoffice googledrive 
+media-libs/opencv contrib contriv_cvv contrib_xfeatures2d eigen gflags glog ipp  webp gtk jpeg lapack opengl png threads tiff python openmp contrib_sfm contrib_hdf -qt4
+dev-libs/boost  python
+dev-libs/weston wayland-compositor xwayland
+media-libs/libsdl2 gles
+media-libs/gst-plugins-bad egl
+app-portage/layman mercurial
+app-text/ghostscript-gpl -l10n_ja
+www-client/firefox rust pgo custom-optimization custom-cflags hwaccel wifi #system-harfbuzz system-jpeg system-libevent system-libvpx system-sqlite
+dev-libs/libpcre pcre16
+sys-libs/zlib minizip
+app-text/poppler qt5
+dev-qt/qtcore icu
+media-libs/gd fontconfig
+dev-lang/erlang hipe
+sys-apps/net-tools arp
+app-emulation/winetricks rar
+sys-devel/gcc pgo 
+app-text/texlive xetex graphics luatex science
+app-text/texlive-core xetex
+net-fs/samba client
+sys-libs/tevent python -abi_x86_64
+#media-libs/libvpx postproc
+x11-base/xorg-server xvfb
+# required by dev-qt/qtwayland-5.7.1::gentoo
+# required by dev-qt/qtwayland (argument)
+>=dev-qt/qtgui-5.7.1-r1 egl
+# required by app-office/texmaker-4.5-r2::gentoo
+# required by texmaker (argument)
+>=dev-qt/qtwebkit-5.7.1 printsupport
+# required by app-i18n/libkkc-0.3.5::gentoo
+# required by app-i18n/ibus-kkc-1.5.22::gentoo
+# required by ibus-kkc (argument)
+>=dev-libs/marisa-0.2.4 python
+# required by media-gfx/gnome-photos-3.24.3::gentoo
+# required by gnome-base/gnome-extra-apps-3.24.0::gentoo[tracker]
+# required by gnome-base/gnome-3.24.0::gentoo[extras]
+# required by @selected
+# required by @world (argument)
+>=media-libs/gegl-0.3.20 raw jpeg2k

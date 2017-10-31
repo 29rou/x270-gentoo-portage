@@ -1,0 +1,17 @@
+# required by google-chrome (argument)
+>=www-client/google-chrome-57.0.2987.133 google-chrome
+app-emulation/virtualbox-bin PUEL
+# required by =virtualbox-extpack-oracle-5.1.20.114628 (argument)
+>=app-emulation/virtualbox-extpack-oracle-5.1.20.114628 PUEL
+# required by xerox-drivers (argument)
+>=net-print/xerox-drivers-0_p20080123 Xerox
+# required by @selected
+# required by @world (argument)
+=app-emulation/virtualbox-extpack-oracle-5.0.32.112930 PUEL
+# required by www-client/chromium-58.0.3029.81::gentoo[widevine]
+# required by chromium (argument)
+>=www-plugins/chrome-binary-plugins-58.0.3029.110:stable google-chrome
+# required by www-plugins/adobe-flash (argument)
+>=www-plugins/adobe-flash-25.0.0.171 AdobeFlash-11.x
+# required by =app-emulation/virtualbox-extpack-oracle-5.0.40.115130 (argument)
+=app-emulation/virtualbox-extpack-oracle-5.0.40.115130 PUEL

@@ -1,0 +1,35 @@
+sys-apps/gnome-disk-utility fat
+net-misc/modemmanager qmi mbim
+net-misc/networkmanager modemmanager ppp
+app-i18n/mozc ibus renderer emacs 
+app-editors/emacs sorce dynamic-loading gconf gfile gif gsettings gtk3 gzip-el imagemagick athena libxml2 toolkit-scroll-bars xwidgets 
+app-office/libreoffice googledrive gtk3 #vlc mysql postgres
+media-libs/opencv contrib contriv_cvv contrib_xfeatures2d eigen gflags glog ipp  webp gtk jpeg lapack opengl png threads tiff python openmp contrib_sfm contrib_hdf 
+dev-libs/boost  python
+sys-libs/ncurses tinfo
+dev-libs/weston wayland-compositer xwayland resize-optimization drm
+media-libs/libsdl2 gles
+media-libs/gst-plugins-bad egl
+app-portage/layman mercurial
+app-text/ghostscript-gpl -l10n_ja
+net-fs/samba client
+www-client/firefox rust pgo custom-optimization hwaccel  gmp-autoupdate nsplugin wifi system-harfbuzz system-jpeg system-libevent system-libvpx system-sqlite
+www-client/chromium  -custom-cflags gtk3 gconf hangouts proprietary-codecs pulseaudio -system-ffmpeg -system-libvpx tcmalloc widevine gnome-keyring 
+dev-libs/libpcre pcre16
+dev-lang/erlang hipe 
+sys-apps/net-tools arp
+media-libs/gegl jpeg2k raw
+sys-devel/gcc pgo 
+app-text/texlive cjk  xetex graphics luatex science
+app-text/texlive-core cjk xetex
+
+# required by www-client/firefox-57.0_beta11::mozilla[system-libvpx]
+# required by @selected
+# required by @world (argument)
+>=media-libs/libvpx-1.5.0 postproc
+# required by www-client/firefox-57.0_beta11::mozilla[system-sqlite]
+# required by @selected
+# required by @world (argument)
+>=dev-db/sqlite-3.20.1-r1 secure-delete
+
+

@@ -1,0 +1,28 @@
+media-libs/mesa -vaapi
+lxqt-base/lxqt-meta lightdm icons lximage -minimal admin powermanagement sudo 
+lxqt-base/lxqt-panel cpuload  networkmonitor sensor  alsa kindicator volume 
+x11-misc/lightdm kde qt5 -gnom
+net-misc/networkmanager modemmanager ppp
+app-i18n/fcitx gtk3 -qt4  autostart
+app-i18n/mozc fcitx renderer emacs  -ibus
+app-editors/emacs -X -gtk3 sorce 
+app-office/libreoffice googledrive
+media-libs/opencv contrib contriv_cvv contrib_xfeatures2d eigen python java vaapi opengl openmp threads
+dev-libs/boost treads python
+dev-cpp/eigen c++11 openmp
+app-emulation/virtualbox vboxwebsrv
+
+# required by app-i18n/libkkc-9999::wjn-overlay
+# required by app-i18n/fcitx-kkc-9999::wjn-overlay
+# required by fcitx-kkc (argument)
+>=dev-libs/marisa-0.2.4 python
+# required by app-office/libreoffice-5.2.3.3-r1::gentoo
+# required by libreoffice (argument)
+>=media-libs/harfbuzz-1.4.5 icu
+# required by app-emulation/docker-17.03.1::gentoo[container-init]
+# required by @selected
+# required by @world (argument)
+>=sys-process/tini-0.13.2 static
+# required by www-client/firefox-45.8.0::gentoo
+# required by firefox (argument)
+>=dev-lang/python-2.7.12:2.7 sqlite

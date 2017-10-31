@@ -1,0 +1,26 @@
+net-misc/modemmanager qmi mbim
+#sys-kernel/gentoo-sources symlink
+#media-libs/mesa vaapi dri3 gallium opencl vulkan wayland
+net-misc/networkmanager modemmanager ppp
+app-i18n/mozc ibus renderer emacs 
+app-editors/emacs -X  -gtk3 sorce
+app-office/libreoffice googledrive gtk3
+media-libs/opencv contrib contriv_cvv contrib_xfeatures2d eigen python openmp
+dev-libs/boost  python
+app-emulation/virtualbox
+sys-libs/ncurses tinfo
+dev-libs/weston wayland-compositer xwayland resize-optimization drm
+#media-libs/libsdl gles
+media-libs/libsdl2 gles
+media-libs/gst-plugins-bad egl
+app-portage/layman mercurial
+app-text/ghostscript-gpl -l10n_ja
+net-fs/samba client
+www-client/firefox rust pgo custom-optimization hwaccel jemalloc gmp-autoupdate nsplugin pulseaudio -system-cairo -system-harfbuzz -system-icu -system-jpeg -system-libevent -system-libvpx -system-sqlite wifi 
+www-client/chromium  -custom-cflags gtk3 gconf hangouts proprietary-codecs pulseaudio -system-ffmpeg -system-libvpx tcmalloc widevine gnome-keyring 
+dev-libs/libpcre pcre16
+app-emulation/wine X alsa opengl pulseaudio pipelight staging oss themes threads vaapi v2l truetype gstreamer xcomposite 
+
+# required by sys-libs/ldb-1.1.26::gentoo
+# required by =sys-libs/ldb-1.1.26 (argument)
+>=sys-libs/tevent-0.9.28 python
