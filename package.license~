@@ -1,3 +1,8 @@
+# required by @selected
+# required by @world (argument)
+=app-emulation/virtualbox-extpack-oracle-5.0.32.112930 PUEL
+# required by =app-emulation/virtualbox-extpack-oracle-5.0.40.115130 (argument)
+=app-emulation/virtualbox-extpack-oracle-5.0.40.115130 PUEL
 # required by =virtualbox-extpack-oracle-5.1.20.114628 (argument)
 >=app-emulation/virtualbox-extpack-oracle-5.1.20.114628 PUEL
 # required by xerox-drivers (argument)
