@@ -1,536 +1,63 @@
-dev-qt/qtscript scripttools
-dev-qt/qtgui egl
 app-editors/texworks python -qt4 qt5
 app-emulation/docker btrfs
 app-emulation/vagrant virtualbox
+app-emulation/wine -ncurses -opengl
 app-emulation/winetricks rar
 app-i18n/fcitx gtk2 gtk3
-app-i18n/ibus gconf
 app-i18n/mozc emacs #-handwriting-tegaki -gui
 app-office/libreoffice googledrive 
 app-portage/layman mercurial
 app-text/ghostscript-gpl -l10n_ja
+
+#required by app-editors/texworks-0.6.2:0/0::local-overlay
+#required by app-office/texstudio-2.11.2-r1:0/0::gentoo
 app-text/poppler qt5
+
 app-text/texlive graphics luatex science xetex
 app-text/texlive-core xetex
-dev-lang/erlang hipe
 dev-libs/boost  python
+
+#required by dev-qt/qtcore-5.7.1-r3:5/5.7::gentoo
 dev-libs/libpcre pcre16
+
 dev-libs/weston wayland-compositor xwayland
-dev-qt/qtcore icu
+#dev-qt/qtcore icu
+
+#required by (dev-qt/qtwayland-5.7.1:5/5.7::gentoo, installed)
+dev-qt/qtgui egl
+
+dev-qt/qtscript scripttools
 gnome-base/gnome -classic
-media-gfx/graphicsmagick imagemagick
+#media-gfx/graphicsmagick imagemagick
+
+#required by media-gfx/graphviz-2.38.0-r1:0/0::gentoo
 media-libs/gd fontconfig
-media-libs/gst-plugins-bad egl
+
+#media-libs/gst-plugins-bad egl
+
+#required by wayland?
 media-libs/libsdl2 gles
-media-libs/opencv contrib contrib_hdf contrib_sfm contrib_xfeatures2d eigen gflags glog gtk ipp jpeg lapack opengl openmp png python -qt4 threads tiff webp
-net-fs/samba client
+
+#net-fs/samba client
 net-misc/modemmanager mbim
 sys-apps/gnome-disk-utility fat
 sys-apps/net-tools arp
-sys-devel/gcc pgo 
-sys-libs/tevent  python
-sys-libs/zlib minizip
-www-client/firefox custom-cflags custom-optimization hwaccel pgo rust wifi
-x11-base/xorg-server xvfb
-app-emulation/wine -opengl -ncurses 
+sys-devel/gcc pgo
+#sys-libs/tevent  python
 
-# required by dev-libs/nettle-3.3-r2::gentoo[gmp]
-# required by net-libs/gnutls-3.5.15::gentoo
-# required by net-print/cups-2.1.4::gentoo[ssl]
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/gmp-6.1.0 abi_x86_32
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-proto/renderproto-0.11.1-r1 abi_x86_32
-# required by media-libs/libsndfile-1.0.28-r1::gentoo[-minimal]
-# required by media-sound/pulseaudio-10.0::gentoo
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-libs/flac-1.3.2-r1 abi_x86_32
-# required by virtual/libffi-3.0.13-r1::gentoo
-# required by dev-libs/glib-2.52.3::gentoo
-# required by dev-util/pkgconfig-0.29.2::gentoo[-internal-glib]
-# required by virtual/pkgconfig-0-r1::gentoo
-# required by net-print/cups-2.1.4::gentoo
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/libffi-3.2.1 abi_x86_32
-# required by x11-libs/libX11-1.6.5::gentoo
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-proto/xproto-7.0.31 abi_x86_32
-# required by app-emulation/wine-2.0::gentoo[png]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-libs/libpng-1.6.34 abi_x86_32
-# required by media-sound/pulseaudio-10.0::gentoo[glib]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/glib-2.52.3 abi_x86_32
-# required by x11-libs/libSM-1.2.2-r1::gentoo
-# required by media-sound/pulseaudio-10.0::gentoo[X]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libICE-1.0.9-r1 abi_x86_32
-# required by app-emulation/wine-2.0::gentoo[udev]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=virtual/libudev-232 abi_x86_32
-# required by app-emulation/wine-2.0::gentoo[ldap]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=net-nds/openldap-2.4.44 abi_x86_32
-# required by x11-libs/libXxf86vm-1.1.4::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libXext-1.3.3 abi_x86_32
-# required by x11-libs/libxcb-1.12-r2::gentoo
-# required by x11-libs/libX11-1.6.5::gentoo
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/libpthread-stubs-0.4 abi_x86_32
-# required by media-plugins/alsa-plugins-1.1.1-r1::gentoo[pulseaudio]
->=media-sound/pulseaudio-10.0 abi_x86_32
-# required by media-libs/lcms-2.8-r1::gentoo[jpeg]
-# required by app-emulation/wine-2.0::gentoo[lcms]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=virtual/jpeg-0-r2:0 abi_x86_32
-# required by x11-libs/libxcb-1.12-r2::gentoo
-# required by x11-libs/libX11-1.6.5::gentoo
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-proto/xcb-proto-1.12-r2 abi_x86_32
-# required by net-dns/libidn2-2.0.4::gentoo
-# required by net-libs/gnutls-3.5.15::gentoo[idn]
-# required by net-print/cups-2.1.4::gentoo[ssl]
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/libunistring-0.9.7 abi_x86_32
-# required by media-sound/pulseaudio-10.0::gentoo[asyncns]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=net-libs/libasyncns-0.8-r3 abi_x86_32
-# required by x11-libs/libXtst-1.2.3::gentoo
-# required by media-sound/pulseaudio-10.0::gentoo[X]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libXi-1.7.9 abi_x86_32
-# required by dev-libs/glib-2.52.3::gentoo
-# required by dev-util/pkgconfig-0.29.2::gentoo[-internal-glib]
-# required by virtual/pkgconfig-0-r1::gentoo
-# required by net-print/cups-2.1.4::gentoo
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=virtual/libiconv-0-r2 abi_x86_32
-# required by media-libs/lcms-2.8-r1::gentoo[tiff]
-# required by app-emulation/wine-2.0::gentoo[lcms]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-libs/tiff-4.0.8 abi_x86_32
-# required by media-libs/libsndfile-1.0.28-r1::gentoo[-minimal]
-# required by media-sound/pulseaudio-10.0::gentoo
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-libs/libvorbis-1.3.5 abi_x86_32
-# required by media-sound/pulseaudio-10.0::gentoo[tcpd]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=sys-apps/tcp-wrappers-7.6.22-r1 abi_x86_32
-# required by x11-libs/libXtst-1.2.3::gentoo
-# required by media-sound/pulseaudio-10.0::gentoo[X]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-proto/inputproto-2.3.2 abi_x86_32
-# required by sys-libs/pam-1.2.1::gentoo[berkdb]
-# required by virtual/pam-0-r1::gentoo
-# required by sys-apps/systemd-233-r6::gentoo[pam]
-# required by media-sound/pulseaudio-10.0::gentoo[systemd]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=sys-libs/db-5.3.28-r2 abi_x86_32
-# required by sys-apps/systemd-233-r6::gentoo
-# required by media-sound/pulseaudio-10.0::gentoo[systemd]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=sys-libs/libcap-2.24-r2 abi_x86_32
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libXrandr-1.5.1 abi_x86_32
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libXcursor-1.1.14 abi_x86_32
-# required by dev-libs/glib-2.52.3::gentoo
-# required by dev-util/pkgconfig-0.29.2::gentoo[-internal-glib]
-# required by virtual/pkgconfig-0-r1::gentoo
-# required by net-print/cups-2.1.4::gentoo
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=virtual/libintl-0-r2 abi_x86_32
-# required by net-print/cups-2.1.4::gentoo[ssl]
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/libgcrypt-1.8.1 abi_x86_32
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libXrender-0.9.10 abi_x86_32
-# required by virtual/libudev-232::gentoo
-# required by app-emulation/wine-2.0::gentoo[udev]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=sys-apps/systemd-233-r6 abi_x86_32
-# required by app-emulation/wine-2.0::gentoo[xcomposite]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libXcomposite-0.4.4-r1 abi_x86_32
-# required by x11-libs/libXtst-1.2.3::gentoo
-# required by media-sound/pulseaudio-10.0::gentoo[X]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-proto/recordproto-1.14.2-r1 abi_x86_32
+#required by dev-libs/quazip-0.7.2-r1:0/0::gentoo,
+sys-libs/zlib minizip
+
+www-client/firefox custom-cflags custom-optimization hwaccel pgo rust wifi system-sqlite system-harfbuzz system-jpeg system-libvpx system-libevent
+
+#required by www-client/firefox-57.0_beta14:0/0::mozilla
+x11-base/xorg-server xvfb
+
 # required by app-emulation/wine-2.0::gentoo[mp3]
 # required by app-emulation/winetricks-20170823::gentoo
 # required by winetricks (argument)
 >=media-sound/mpg123-1.25.6 abi_x86_32
-# required by sys-apps/systemd-233-r6::gentoo[pam]
-# required by media-sound/pulseaudio-10.0::gentoo[systemd]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=virtual/pam-0-r1 abi_x86_32
-# required by app-emulation/wine-2.0::gentoo[fontconfig]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-libs/fontconfig-2.12.4 abi_x86_32
-# required by dev-libs/libgcrypt-1.8.1::gentoo
-# required by dev-libs/libxslt-1.1.30-r2::gentoo[crypt]
-# required by x11-libs/libxcb-1.12-r2::gentoo
-# required by x11-libs/libX11-1.6.5::gentoo
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/libgpg-error-1.27-r1 abi_x86_32
-# required by sys-apps/systemd-233-r6::gentoo
-# required by media-sound/pulseaudio-10.0::gentoo[systemd]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=sys-apps/util-linux-2.28.2 abi_x86_32
-# required by dev-libs/glib-2.52.3::gentoo
-# required by dev-util/pkgconfig-0.29.2::gentoo[-internal-glib]
-# required by virtual/pkgconfig-0-r1::gentoo
-# required by net-print/cups-2.1.4::gentoo
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=virtual/libffi-3.0.13-r1 abi_x86_32
-# required by media-libs/libvorbis-1.3.5::gentoo
-# required by media-libs/libsndfile-1.0.28-r1::gentoo[-minimal]
-# required by media-sound/pulseaudio-10.0::gentoo
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-libs/libogg-1.3.2 abi_x86_32
-# required by media-plugins/alsa-plugins-1.1.1-r1::gentoo
-# required by media-sound/pulseaudio-10.0::gentoo[alsa,alsa-plugin]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-libs/alsa-lib-1.1.2 abi_x86_32
-# required by net-print/cups-2.1.4::gentoo[dbus]
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=sys-apps/dbus-1.10.18 abi_x86_32
-# required by x11-libs/libXfixes-5.0.3::gentoo
-# required by x11-libs/libXi-1.7.9::gentoo
-# required by x11-libs/libXtst-1.2.3::gentoo
-# required by media-sound/pulseaudio-10.0::gentoo[X]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-proto/fixesproto-5.0-r1 abi_x86_32
-# required by media-libs/freetype-2.8::gentoo[bzip2]
-# required by app-emulation/wine-2.0::gentoo[truetype]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=app-arch/bzip2-1.0.6-r8 abi_x86_32
-# required by virtual/pkgconfig-0-r1::gentoo
-# required by net-print/cups-2.1.4::gentoo
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-util/pkgconfig-0.29.2 abi_x86_32
-# required by dev-libs/libxslt-1.1.30-r2::gentoo
-# required by x11-libs/libxcb-1.12-r2::gentoo
-# required by x11-libs/libX11-1.6.5::gentoo
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/libxml2-2.9.6 abi_x86_32
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=net-print/cups-2.1.4 abi_x86_32
-# required by media-libs/fontconfig-2.12.4::gentoo
-# required by app-emulation/wine-2.0::gentoo[fontconfig]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-libs/freetype-2.8 abi_x86_32
-# required by x11-libs/libXcomposite-0.4.4-r1::gentoo
-# required by app-emulation/wine-2.0::gentoo[xcomposite]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-proto/compositeproto-0.4.2-r1 abi_x86_32
-# required by x11-libs/libX11-1.6.5::gentoo
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-proto/kbproto-1.0.7 abi_x86_32
-# required by sys-apps/systemd-233-r6::gentoo[lz4]
-# required by media-sound/pulseaudio-10.0::gentoo[systemd]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=app-arch/lz4-1.7.5-r1 abi_x86_32
-# required by app-emulation/wine-2.0::gentoo[lcms]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-libs/lcms-2.8-r1 abi_x86_32
-# required by sys-libs/pam-1.2.1::gentoo
-# required by virtual/pam-0-r1::gentoo
-# required by sys-apps/systemd-233-r6::gentoo[pam]
-# required by media-sound/pulseaudio-10.0::gentoo[systemd]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=sys-devel/flex-2.6.4-r1 abi_x86_32
-# required by app-emulation/wine-2.0::gentoo[nls]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=sys-devel/gettext-0.19.8.1 abi_x86_32
-# required by virtual/pam-0-r1::gentoo
-# required by sys-apps/systemd-233-r6::gentoo[pam]
-# required by media-sound/pulseaudio-10.0::gentoo[systemd]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=sys-libs/pam-1.2.1 abi_x86_32
-# required by dev-libs/glib-2.52.3::gentoo
-# required by dev-util/pkgconfig-0.29.2::gentoo[-internal-glib]
-# required by virtual/pkgconfig-0-r1::gentoo
-# required by net-print/cups-2.1.4::gentoo
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/libpcre-8.41 abi_x86_32
-# required by x11-libs/libXxf86vm-1.1.4::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-proto/xf86vidmodeproto-2.3.1-r1 abi_x86_32
-# required by x11-libs/libXext-1.3.3::gentoo
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-proto/xextproto-7.3.0 abi_x86_32
-# required by app-emulation/wine-2.0::gentoo[xml]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/libxslt-1.1.30-r2 abi_x86_32
-# required by x11-libs/libX11-1.6.5::gentoo
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libxcb-1.12-r2 abi_x86_32
-# required by media-sound/pulseaudio-10.0::gentoo[X]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libSM-1.2.2-r1 abi_x86_32
-# required by net-libs/gnutls-3.5.15::gentoo
-# required by net-print/cups-2.1.4::gentoo[ssl]
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=virtual/pkgconfig-0-r1 abi_x86_32
-# required by net-nds/openldap-2.4.44::gentoo[-gnutls,ssl]
-# required by app-emulation/wine-2.0::gentoo[ldap]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/openssl-1.0.2l abi_x86_32
-# required by x11-libs/libX11-1.6.5::gentoo
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-proto/xf86bigfontproto-1.2.0-r1 abi_x86_32
-# required by sys-libs/pam-1.2.1::gentoo[cracklib]
-# required by virtual/pam-0-r1::gentoo
-# required by sys-apps/systemd-233-r6::gentoo[pam]
-# required by media-sound/pulseaudio-10.0::gentoo[systemd]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=sys-libs/cracklib-2.9.6-r1 abi_x86_32
-# required by x11-libs/libXi-1.7.9::gentoo
-# required by x11-libs/libXtst-1.2.3::gentoo
-# required by media-sound/pulseaudio-10.0::gentoo[X]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libXfixes-5.0.3 abi_x86_32
-# required by x11-libs/libxcb-1.12-r2::gentoo
-# required by x11-libs/libX11-1.6.5::gentoo
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libXau-1.0.8 abi_x86_32
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-proto/randrproto-1.5.0 abi_x86_32
-# required by media-libs/fontconfig-2.12.4::gentoo
-# required by app-emulation/wine-2.0::gentoo[fontconfig]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/expat-2.2.1 abi_x86_32
-# required by media-sound/pulseaudio-10.0::gentoo[alsa,alsa-plugin]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-plugins/alsa-plugins-1.1.1-r1 abi_x86_32
-# required by net-print/cups-2.1.4::gentoo[ssl]
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=net-libs/gnutls-3.5.15 abi_x86_32
-# required by net-libs/gnutls-3.5.15::gentoo[idn]
-# required by net-print/cups-2.1.4::gentoo[ssl]
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=net-dns/libidn2-2.0.4 abi_x86_32
-# required by media-sound/pulseaudio-10.0::gentoo
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-libs/libsndfile-1.0.28-r1 abi_x86_32
-# required by virtual/jpeg-0-r2::gentoo
-# required by app-emulation/wine-2.0::gentoo[jpeg]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-libs/libjpeg-turbo-1.5.1 abi_x86_32
-# required by net-libs/gnutls-3.5.15::gentoo
-# required by net-print/cups-2.1.4::gentoo[ssl]
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/libtasn1-4.12-r1 abi_x86_32
-# required by x11-libs/libxcb-1.12-r2::gentoo
-# required by x11-libs/libX11-1.6.5::gentoo
-# required by x11-libs/libXrandr-1.5.1::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libXdmcp-1.1.2-r1 abi_x86_32
-# required by net-libs/gnutls-3.5.15::gentoo
-# required by net-print/cups-2.1.4::gentoo[ssl]
-# required by app-emulation/wine-2.0::gentoo[cups]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=dev-libs/nettle-3.3-r2 abi_x86_32
-# required by x11-libs/libXcursor-1.1.14::gentoo
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libX11-1.6.5 abi_x86_32
-# required by media-sound/pulseaudio-10.0::gentoo[X]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libXtst-1.2.3 abi_x86_32
-# required by app-emulation/wine-2.0::gentoo[X]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=x11-libs/libXxf86vm-1.1.4 abi_x86_32
-# required by sys-libs/libcap-2.24-r2::gentoo
-# required by sys-auth/rtkit-0.11-r2::gentoo
-# required by app-emulation/wine-2.0::gentoo[realtime,pulseaudio]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=sys-apps/attr-2.4.47-r2 abi_x86_32
-# required by sys-libs/cracklib-2.9.6-r1::gentoo[zlib]
-# required by sys-libs/pam-1.2.1::gentoo[cracklib]
-# required by virtual/pam-0-r1::gentoo
-# required by sys-apps/systemd-233-r6::gentoo[pam]
-# required by media-sound/pulseaudio-10.0::gentoo[systemd]
-# required by media-sound/mpg123-1.25.6::gentoo[pulseaudio]
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=sys-libs/zlib-1.2.11-r1 abi_x86_32
+# required by www-client/firefox-57.0_beta14::mozilla[system-libvpx]
+# required by @selected
+# required by @world (argument)
+>=media-libs/libvpx-1.5.0 postproc

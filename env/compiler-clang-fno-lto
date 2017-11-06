@@ -1,0 +1,6 @@
+CC="clang"                            
+CXX="clang++" 
+CFLAGS="-O3 -mtune=native -march=native -pipe"
+CXXFLAGS="${CFLAGS}"                        
+CFLAGS="${CFLAGS} -fno-lto"              
+CXXFLAGS="${CXXFLAGS} -fno-lto"

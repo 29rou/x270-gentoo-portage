@@ -1,0 +1,10 @@
+CC="clang"                            
+CXX="clang++"   
+CFLAGS="-O3 -mtune=native -march=native -pipe"
+CXXFLAGS="${CFLAGS}"
+#CFLAGS="${CFLAGS} -flto=thin"              
+#CXXFLAGS="${CXXFLAGS} -flto=thin"                          
+LDFLAGS="-Wl,-O3 -Wl,--as-needed"    #please use whichever optimization level you're comfortable with
+AR="llvm-ar"
+NM="llvm-nm"
+RANLIB="llvm-ranlib"

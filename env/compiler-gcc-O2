@@ -1,0 +1,7 @@
+CFLAGS="-O2 -march=native -pipe"
+CXXFLAGS="${CFLAGS}"
+CC = "gcc"
+CXX = "g++"
+AR="ar"
+NM="nm"
+RANLIB="ranlib"

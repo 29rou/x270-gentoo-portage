@@ -161,6 +161,8 @@
 # required by app-emulation/vagrant-2.0.0::gentoo[ruby_targets_ruby22]
 # required by vagrant (argument)
 =dev-ruby/ruby_dep-1.5.0 ~amd64
+# required by =dev-util/gdbus-codegen-2.52.3 (argument)
+=dev-util/gdbus-codegen-2.52.3 ~amd64
 # required by gnome-base/gnome-3.24.0::gentoo
 # required by @selected
 # required by @world (argument)
@@ -408,8 +410,6 @@
 # required by @selected
 # required by @world (argument)
 =www-client/epiphany-3.24.5 ~amd64
-# required by =www-client/firefox-57.0_beta12 (argument)
-=www-client/firefox-57.0_beta12 ~amd64
 # required by media-libs/clutter-1.26.2::gentoo
 # required by gnome-extra/gnome-contacts-3.22.1::gentoo
 # required by gnome-base/gnome-core-apps-3.22.2::gentoo
@@ -451,5 +451,28 @@
 # required by @selected
 # required by @world (argument)
 =x11-wm/mutter-3.24.4 ~amd64
-# required by =dev-util/gdbus-codegen-2.52.3 (argument)
-=dev-util/gdbus-codegen-2.52.3 ~amd64
+# required by @preserved-rebuild (argument)
+=dev-util/cargo-0.21.0 ~amd64
+# required by sys-devel/llvm-5.0.0::gentoo[gold]
+# required by llvm (argument)
+=sys-devel/llvmgold-5 ~amd64
+# required by @selected
+# required by @world (argument)
+=app-i18n/mozc-2.20.2673.102 ~amd64
+# required by =dev-util/google-perftools-2.6.1 (argument)
+=dev-util/google-perftools-2.6.1 ~amd64
+# required by docker-compose-bin (argument)
+=app-emulation/docker-compose-bin-1.16.1 ~amd64
+# required by =samba-4.5.14 (argument)
+=net-fs/samba-4.5.14 ~amd64
+# required by sys-devel/llvm-3.8.1-r2::gentoo[clang]
+# required by =sys-devel/llvm-3.8.1-r2 (argument)
+=sys-devel/clang-3.8.1-r100 ~amd64
+# required by =sys-devel/llvm-3.8.1-r2 (argument)
+=sys-devel/llvm-3.8.1-r2 ~amd64
+# required by =ffmpeg-3.3.5 (argument)
+=media-video/ffmpeg-3.3.5 ~amd64
+# required by =docbook-xsl-stylesheets-1.79.1-r2 (argument)
+=app-text/docbook-xsl-stylesheets-1.79.1-r2 ~amd64
+# required by =www-client/firefox-57.0_beta14 (argument)
+=www-client/firefox-57.0_beta14 ~amd64

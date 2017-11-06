@@ -1,0 +1,11 @@
+CC="clang"
+CXX="clang++"
+CFLAGS="-O3 -mtune=native -march=native -pipe"
+CXXFLAGS="${CFLAGS}"
+CFLAGS="${CFLAGS}"
+CXXFLAGS="${CXXFLAGS}"
+LDFLAGS="-Wl,-O3 -Wl,--as-needed"
+AR="llvm-ar"
+NM="llvm-nm"
+RANLIB="llvm-ranlib"
+
