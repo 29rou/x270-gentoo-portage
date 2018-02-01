@@ -1,3 +1,10 @@
+# required by www-client/firefox-57.0_beta14::mozilla[system-libvpx]
+# required by @selected
+# required by @world (argument)
+>=media-libs/libvpx-1.5.0 postproc
+
+#  required by sys-libs/ldb-1.1.29-r1:0/1.1.29::gentoo
+sys-libs/tevent python
 app-editors/texworks python -qt4 qt5
 app-emulation/docker btrfs
 app-emulation/vagrant virtualbox
@@ -48,16 +55,8 @@ sys-devel/gcc pgo
 #required by dev-libs/quazip-0.7.2-r1:0/0::gentoo,
 sys-libs/zlib minizip
 
-www-client/firefox custom-cflags custom-optimization hwaccel pgo rust wifi system-sqlite system-harfbuzz system-jpeg system-libvpx system-libevent
+www-client/firefox custom-cflags custom-optimization hwaccel pgo rust system-harfbuzz system-jpeg system-libevent system-libvpx system-sqlite wifi
 
 #required by www-client/firefox-57.0_beta14:0/0::mozilla
 x11-base/xorg-server xvfb
-
-# required by app-emulation/wine-2.0::gentoo[mp3]
-# required by app-emulation/winetricks-20170823::gentoo
-# required by winetricks (argument)
->=media-sound/mpg123-1.25.6 abi_x86_32
-# required by www-client/firefox-57.0_beta14::mozilla[system-libvpx]
-# required by @selected
-# required by @world (argument)
->=media-libs/libvpx-1.5.0 postproc
+media-libs/opencv -ffmpeg java lapack contrib contrib_xfeatures2d
