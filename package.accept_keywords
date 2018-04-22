@@ -642,3 +642,39 @@
 =dev-util/bazel-0.7.0 ~amd64
 # required by =app-editors/visual-studio-code-1.19.3 (argument)
 =app-editors/visual-studio-code-1.19.3 ~amd64
+# required by dev-util/eclipse-sdk-bin (argument)
+=dev-util/eclipse-sdk-bin-4.6.2-r1 ~amd64
+# required by =dev-util/pycharm-professional-2017.3.3 (argument)
+=dev-util/pycharm-professional-2017.3.3 ~amd64
+# required by =app-editors/visual-studio-code-1.20.1 (argument)
+=app-editors/visual-studio-code-1.20.1 ~amd64
+# required by =visual-studio-code-1.22.1 (argument)
+=app-editors/visual-studio-code-1.22.1 ~amd64
+# required by idea-ultimate (argument)
+=dev-util/idea-ultimate-2017.3.1.173.3942.27 ~amd64
+# required by =dev-libs/libinput-1.10.4 (argument)
+=dev-libs/libinput-1.10.4 ~amd64
+# required by fingerprint-gui (argument)
+=sys-auth/fingerprint-gui-1.09 ~amd64
+# required by =sys-kernel/gentoo-sources-4.14.34 (argument)
+=sys-kernel/gentoo-sources-4.14.34 ~amd64
+# required by =sys-kernel/linux-firmware-20180412 (argument)
+=sys-kernel/linux-firmware-20180412 ~amd64
+# required by =sys-auth/fprintd-0.6.0 (argument)
+=sys-auth/fprintd-0.6.0 ~amd64
+# required by =dev-util/idea-ultimate-2017.3.2.173.4127.17_pre (argument)
+=dev-util/idea-ultimate-2017.3.2.173.4127.17_pre **
+# required by =dev-util/idea-ultimate-2018.1.1.181.4445.78 (argument)
+=dev-util/idea-ultimate-2018.1.1.181.4445.78 ~amd64
+# required by =media-libs/vulkan-loader-1.1.70.0 (argument)
+=media-libs/vulkan-loader-1.1.70.0 ~amd64
+# required by =dev-util/pycharm-professional-2018.1 (argument)
+=dev-util/pycharm-professional-2018.1 ~amd64
+# required by =dev-util/clion-2018.1 (argument)
+=dev-util/clion-2018.1 ~amd64
+# required by =dev-util/pycharm-professional-2018.1.1 (argument)
+=dev-util/pycharm-professional-2018.1.1 ~amd64
+# required by =dev-util/clion-2018.1.1 (argument)
+=dev-util/clion-2018.1.1 ~amd64
+# required by =app-editors/visual-studio-code-1.22.2 (argument)
+=app-editors/visual-studio-code-1.22.2 ~amd64

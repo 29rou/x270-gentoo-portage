@@ -1,3 +1,4 @@
+www-client/chromium hangouts proprietary-codecs 
 #  required by sys-libs/ldb-1.1.29-r1:0/1.1.29::gentoo
 sys-libs/tevent python
 app-editors/texworks python -qt4 qt5
@@ -83,3 +84,9 @@ media-libs/opencv -ffmpeg java lapack contrib -contrib_xfeatures2d
 # required by @selected
 # required by @world (argument)
 >=media-libs/gegl-0.3.26 raw jpeg2k
+# required by www-client/firefox-52.6.0::gentoo[pgo]
+# required by firefox (argument)
+>=x11-base/xorg-server-1.19.5 xvfb
+# required by www-client/chromium-65.0.3325.146::gentoo
+# required by chromium (argument)
+>=dev-libs/libxml2-2.9.7 icu
